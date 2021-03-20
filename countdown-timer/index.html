@@ -8,26 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>New Years Eve</h1>
+    <div class="bg-img"></div>
+    <div class="container1">    
+        <h1>Set the Reminder</h1>
+        <input type="date" name="date" value="2021-02-23" id="dateInp" class="dateInp" required>
+        <input type="text" name="Text" id="textInput" placeholder="Add a text">
+    </div>
+    <div class="container2">
+    <h1 id="quoteTxt"></h1>
     <div class="countdown-container">
-        <div class="days-c">
+        <div class="countdown-el days-c">
             <p class="big-text" id="days">0</p>
             <span>days</span>
         </div>
-        <div class="hours-c">
+        <div class="countdown-el hours-c">
             <p class="big-text" id="hours">0</p>
             <span>hours</span>
         </div>
-        <div class="mins-c">
+        <div class="countdown-el mins-c">
             <p class="big-text" id="mins">0</p>
             <span>mins</span>
         </div>
-        <div class="sec-c">
+        <div class="countdown-el sec-c">
             <p class="big-text" id="sec">0</p>
             <span>sec</span>
         </div>
     </div>
-    
-    <script src="./app.js"></script>
+</div>
+
+<script src="./app.js"></script>
 </body>
 </html>
